@@ -42,3 +42,12 @@ occupation = st.selectbox(
 st.write("Opción seleccionada:", occupation)
 st.subheader("MultiSelect")
 #MultiSelect
+location = st.multiselect(
+  "Donde trabajas?",
+  ("México", "Nueva York", "Guadalajara", "Monterrey", "Nepal", "Buenos Aires", "Caracas"),
+)
+st.write("Seleccionó:", len(location), "locaciones")
+st.subheader("Slider")
+#Slider
+level = st.slider("Cual es tu nivel?", 1, 5)
+st.write("Nivel:", level)
