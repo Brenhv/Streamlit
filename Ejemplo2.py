@@ -24,3 +24,21 @@ st.header("Obtener información de ayuda de Python")
 st.help(range)
 st.header("Widgets:")
 st.subheader("Checkbox")
+#Checkbox
+if st.checkbox("Show/Hide"):
+  st.text("Mostrar u ocultar Widget")
+  st.subheader("Radio buttons")
+#Radio Buttons
+status = st.radio("Cual es su estatus", ("Activo", "Inactico"))
+if status == "Activo":
+  st.success("Estas activo")
+else:
+  st.warning("Inactivo")
+  st.subheader("SelectBox")
+#SelectBox
+occupation = st.selectbox(
+"Tu ocupación", ["Programador", "Científico de datos", "BI", "Ingeniero de Datos"]
+)
+st.write("Opción seleccionada:", occupation)
+st.subheader("MultiSelect")
+#MultiSelect
