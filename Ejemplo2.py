@@ -1,6 +1,7 @@
 import datetime 
 import time
 import pandas as pd
+import numpy as  np
 import streamlit as st
 from PIL import Image
 
@@ -88,4 +89,48 @@ st.subheader("Archivo de imagen")
 img = Image.open("calor_control")
 st.image(img, width=300, caption="Simple Imagen")
 
-st.header
+st.header("Otras opciones que permite la funcion write")
+#Writing Text/Super Fnx
+st.subheader("Texto con write")
+st.write("Texto con write")
+st.write(range(10))
+st.header("Desplegando código puro y json")
+st.subheader("Código puro")
+st.code("import numpy as np")
+wirh st.echo():
+st.subheader("Desplegado json")
+st.text("Mostrando JSON")
+st.json({"nombre": "Jhon", "apellido": "Doe", "genero": "masculino"})
+st.header("Mostrar barra de progreso, spinner y ballons")
+st.subheader("Barra de progreso")
+my_bar = st.progress(0)
+for p in range(10):
+  my_bar.progress(p + 1)
+st.subheader("Spinner")
+with st.spinner("Espere .."):
+  time.sleep(5)
+  st.seccess("Finalizó!")
+st..subheader("Balloons")
+#Balloons
+t.balloones()
+t.header("Trabajando con data science")
+df = pd.read_csv("", index_col=0)
+st.subheader("Dataframe")
+st.dataframe(df)
+st.subheader("tabla")
+st.table(df.head())
+st.subheader("gráfica")
+chart_data = pd.DataFrame(
+  {
+    "col1": np.random.randn(20),
+    "col2": np.random.randn(20),
+    "col3": np.random.choice(["A", "B", "C"], 20),
+  }
+)
+
+st.line_chart(chart_data, x="col1", y="col2", color="col3")
+#mostrar barra lateral
+st.sidebar.header("Acerca")
+st.sidebar.text("Tutorial de streamlit ")
+st.header("Trabajando con funciones")
+st.write(list(run_fxn(10)))
