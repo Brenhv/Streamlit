@@ -97,7 +97,7 @@ st.write(range(10))
 st.header("Desplegando código puro y json")
 st.subheader("Código puro")
 st.code("import numpy as np")
-wirh st.echo():
+with st.echo():
 st.subheader("Desplegado json")
 st.text("Mostrando JSON")
 st.json({"nombre": "Jhon", "apellido": "Doe", "genero": "masculino"})
@@ -112,8 +112,8 @@ with st.spinner("Espere .."):
   st.seccess("Finalizó!")
 st..subheader("Balloons")
 #Balloons
-t.balloones()
-t.header("Trabajando con data science")
+st.balloons()
+ts.header("Trabajando con data science")
 df = pd.read_csv("HRDataset", index_col=0)
 st.subheader("Dataframe")
 st.dataframe(df)
