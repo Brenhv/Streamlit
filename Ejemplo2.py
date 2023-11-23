@@ -111,7 +111,7 @@ st.subheader("Spinner")
 with st.spinner("Espere .."):
   time.sleep(5)
   st.seccess("Finalizó!")
-st..subheader("Balloons")
+st.subheader("Balloons")
 #Balloons
 st.balloons()
 ts.header("Trabajando con data science")
