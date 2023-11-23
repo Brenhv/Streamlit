@@ -4,6 +4,10 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
+@st.cache
+def run_fxn(n; int) -> list:
+  return range(n)
+
 """Generación de la webapp con streamlit"""
 # Definir titulo
 st.title("Titulo: Analitica de Datos")
@@ -51,3 +55,22 @@ st.subheader("Slider")
 #Slider
 level = st.slider("Cual es tu nivel?", 1, 5)
 st.write("Nivel:", level)
+st.subheader("Buttons")
+#Buttons
+if st.button("Acerca"):
+  st.text("Streamlit es cool")
+else:
+  st.text("")
+st.header("Como recibir una entrada y procesarla con streamlit?")
+st.subheader("Recibiendo texto")
+#Recibiendo texto
+firstname = st.text_input("Escriba su nombre")
+if st.button("Aceptar"):
+  result = firstname.title()
+  st.success(result)
+st.subheader("Area de texto")
+#Text Area
+message = st.text_area("Escriba un mensaje")
+if st.button("Aceptar "):
+  result = message.title()
+  st.success(result)
