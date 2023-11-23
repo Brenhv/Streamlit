@@ -114,7 +114,7 @@ st..subheader("Balloons")
 #Balloons
 t.balloones()
 t.header("Trabajando con data science")
-df = pd.read_csv("", index_col=0)
+df = pd.read_csv("HRDataset", index_col=0)
 st.subheader("Dataframe")
 st.dataframe(df)
 st.subheader("tabla")
