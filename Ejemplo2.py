@@ -98,6 +98,7 @@ st.header("Desplegando código puro y json")
 st.subheader("Código puro")
 st.code("import numpy as np")
 with st.echo():
+  df = pd.DataFrame()
 st.subheader("Desplegado json")
 st.text("Mostrando JSON")
 st.json({"nombre": "Jhon", "apellido": "Doe", "genero": "masculino"})
