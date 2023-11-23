@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 @st.cache
-def run_fxn(n; int) -> list:
+def run_fxn(n: int) -> list:
   return range(n)
 
 """Generación de la webapp con streamlit"""
