@@ -110,7 +110,7 @@ for p in range(10):
 st.subheader("Spinner")
 with st.spinner("Espere .."):
   time.sleep(5)
-  st.seccess("Finalizó!")
+  st.success("Finalizó!")
 st.subheader("Balloons")
 #Balloons
 st.balloons()
