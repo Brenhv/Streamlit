@@ -86,7 +86,7 @@ st.text(f"{the_time}")
 st.header("Trabajar con archivos de imágenes, audio o videos")
 #Imagenes
 st.subheader("Archivo de imagen")
-img = Image.open("calor_control")
+img = Image.open("calor_control.png")
 st.image(img, width=300, caption="Simple Imagen")
 
 st.header("Otras opciones que permite la funcion write")
